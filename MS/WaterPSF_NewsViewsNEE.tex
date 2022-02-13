@@ -1,0 +1,214 @@
+\documentclass[hidelinks,letterpaper, 11pt]{article}
+\usepackage{graphicx, bm, booktabs, lineno, array}
+\usepackage[fleqn]{amsmath}
+\usepackage{nicefrac}
+\usepackage[numbers, super, sort&compress]{natbib}
+% \usepackage[compress,comma]{natbib}
+\usepackage[right=1in, left=1in, top=1in, bottom=1in]{geometry}
+\usepackage[parfill]{parskip}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[font=large,labelfont=bf,margin=1cm, labelsep = none]{caption}
+\usepackage{setspace}
+\usepackage{gensymb}
+\usepackage{color}
+\usepackage{sidecap}
+\usepackage{etoolbox}
+\usepackage{tcolorbox}
+\usepackage{newpxtext,newpxmath}
+\tcbuselibrary{breakable}
+\newbool{MyRefNumbers}
+\usepackage{authblk}
+\usepackage{hyperref}
+\usepackage{mathpazo}
+\usepackage[color=cyan, textsize=tiny]{todonotes}
+\usepackage[font={normalsize}]{caption}
+\usepackage{adjustbox}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{tabularx}
+
+\setlength{\mathindent}{0pt}
+\setlength{\parindent}{1cm}
+\pdfminorversion=3
+
+% For table
+\newenvironment{myindentpar}[1]%
+{\begin{list}{}%
+		{\setlength{\leftmargin}{#1}}%
+		\item[]%
+	}
+	{\end{list}}
+\newcommand*\samethanks[1][\value{footnote}]{\footnotemark[#1]}
+\newcommand\blfootnote[1]{%
+	\begingroup
+	\renewcommand\thefootnote{}\footnote{#1}%
+	\addtocounter{footnote}{-1}%
+	\endgroup
+}
+\newcommand{\plus}{\raisebox{.4\height}{\scalebox{.6}{+}}}
+\newcommand{\minus}{\raisebox{.4\height}{\scalebox{.8}{-}}}
+% Command to recount supplement
+\newcommand{\beginsupplement}{%
+	\setcounter{table}{0}
+	\renewcommand{\thetable}{S\arabic{table}}%
+	\setcounter{figure}{0}
+	\renewcommand{\thefigure}{S\arabic{figure}}%
+}
+% Command to center oversized images in floats
+\newcommand{\centerfloat}{%
+	\parindent \z@
+	\leftskip \z@ \@plus 1fil \@minus \textwidth
+	\rightskip\leftskip
+	\parfillskip \z@skip}
+\renewcommand\Affilfont{\fontsize{12}{12}\selectfont}
+
+
+
+\begin{document}
+	
+	
+	
+\doublespacing
+% \title{Soil microbes erode plant diversity under wetter climates}
+\title{Are microbes to blame for the loss of plant diversity under climate change?}
+\author[1, $\dagger$]{Po-Ju Ke}
+\affil[1]{Institute of Ecology and Evolutionary Biology, National Taiwan University, Taipei, Taiwan}
+\date{\today}
+\maketitle
+\blfootnote{$\dagger$ Correspondence author: Institute of Ecology and Evolutionary Biology, National Taiwan University, Taipei 10617, Taiwan. Phone: +886 02-3366-2467. Email: pojuke@ntu.edu.tw}
+	
+\onehalfspacing
+\noindent \textbf{Type of article:} News \& Views\\
+\noindent \textbf{Subject strapline:} Plant Ecology\\
+% \noindent \textbf{Words in main text:} \wordcount{\input{Wordcount.sum}}\\
+\noindent \textbf{Words in main text:} 1000\\
+\noindent \textbf{Number of figures:} 1\\
+\noindent \textbf{References:} 14\\
+	
+
+\linenumbers
+\doublespacing
+% Rewrite first paragraph to even more pop-science (start with soil microbes)
+% State explicitly whats unique in the paper (first paragraph and standfirst)
+% Tie in with the central context-dependency theme
+% Sequencing paragraph can be deleted
+% Plant color change in figure
+
+\newpage
+\section*{Standfirst}
+\textbf{Changes in precipitation levels alter the interactions between plants and soil microbes, resulting in diversity-eroding plant--soil feedbacks under wetter conditions that render plant community less predictable.}
+\bigskip
+
+
+
+\section*{Main text}
+% Openning
+The soil that plants grow in harbors a diverse array of soil microbes.
+Farmers have long known that these soil microbes can affect plant growth, causing soil sickness and replanting failures due to the accumulation of soil-borne pathogens \citep{Huang2013, Dias2015}. 
+Rooted in agriculture, the study of plant--soil microbe interactions had also made its way to fundamental ecology questions such as the coexistence of plant species in diverse communities\citep{vanderPutten2013}. 
+Recent research has highlighted that the interactions between plants and soil microbes can vary with environmental factors such as nutrient and water availability \citep{Smith2017, DeLong2019}.
+Such context dependency makes it challenging to predict the consequence of plant--soil microbe interactions, but understanding it is of increasing importance as climate change introduces variation in the environmental factors across time \citep{Pugnaire2019}.
+Writing in this issue of \textit{Nature Ecology \& Evolution}, Dudenh{\"o}ffer and colleagues \citep{Dudenhoffer2022} employed a comprehensive three-pronged approach--combining greenhouse experiment, high-throughput sequencing, and ecological modeling--to study how soil water content affects the community-level consequences of plant--soil microbe interactions. 
+\medskip
+
+
+% Background of the field -- Bever's PSF framework
+While previous studies have investigated the impact of soil water content on plant--soil microbe interactions, they did not leverage existing theory to make predictions on plant coexistence.
+In the ecological literature, the plant--soil feedback (PSF) theory \citep{Bever1997} highlights that soil microbes can affect the plant community by generating frequency-dependent feedback loops, with overall impacts on plant coexistence that can be predicted by a theory-derived pairwise PSF metric.
+Under the original two-species framework, negative pairwise PSF can occur when both plants condition their microbial community to favor heterospecifics over conspecifics; in this case, soil microbes drive negative frequency dependence that increases the tendency of plant coexistence (Fig.~\ref{fig:PSFconceptual}, left panels). 
+Conversely, positive pairwise PSF can occur when plants condition microbial communities that favor conspecifics over heterospecifics, which destabilizes plant coexistence by favoring the initially abundant plant species (Fig.~\ref{fig:PSFconceptual}, right panels).
+\medskip 
+
+
+% What the authors did in this study and results from greenhouse experiments
+Dudenh{\"o}ffer and colleagues were the first to interpret the results of a multi-species water-manipulation experiment using PSF theory. 
+They conducted an impressive full factorial PSF experiment using eight coastal prairie plant species, where all 64 plant species $\times$ soil type combinations were transplanted under three watering treatments.
+Moreover, to provide a holistic prediction of PSF under climate change, the authors imposed the watering treatment onto both the conditioning and the response phase of the experiment.
+They found compelling evidence of a shift from coexistence-stabilizing negative pairwise PSF under drier conditions to coexistence-destabilizing positive pairwise PSF under wetter conditions (Fig.~\ref{fig:PSFconceptual}).
+\medskip
+
+
+% What's special -- New way to calculate the pairwise PSF index
+The authors' prediction is holistic also because of their way of quantifying the pairwise PSF metric. 
+Previous studies mostly calculate the metric based on measurements of plant biomass production in different soils \citep{Crawford2019}.
+However, soil microbes can affect various aspects of plant performance throughout a plant's life span \citep{Dudenhoffer2017}.
+While studies may also monitor seedling survival, the results are often presented as an additional microbial effect independent of biomass production.
+Dudenh{\"o}ffer and colleagues developed a novel approach to integrate seedling survival into the calculation of pairwise PSF: fitting zero-inflated Gamma models that include only the plant species $\times$ soil type interaction terms and no intercept.
+In particular, plant mortality and biomass production of the surviving plants were fitted to different statistical distributions and the model coefficients were used to estimate a plant species' average performance. 
+The pairwise PSF metric \citep{Bever1997} calculated from these estimates compounds the effect of microbes on plant survival and biomass production, thereby unifying multiple microbial effects when predicting the context dependency of PSF. 
+\medskip
+
+
+% What's special -- IBM focusing on predictability
+Dudenh{\"o}ffer and colleagues further parameterized a spatially-explicit model with their experimental data to simulate the long-term consequences of PSF under different watering treatments. 
+Simulations predicted that plant communities retain lower diversity and become less predictable under wetter conditions as positive pairwise PSF becomes prevalent.
+The latter is an important signature of positive pairwise PSF that is often overlooked: diversity is lost under such scenarios not because soil microbes confer a competitive advantage to a specific plant \citep{Kandlikar2019}, but because they drive priority effects (i.e., small random differences in initial species abundances would be amplified).
+Interestingly, further explorations revealed that the context dependency of PSF can have complicated consequences on plant community assembly, with patterns depending on plant mortality, the spatial scale of PSF, and the number of plant species directly favored by positive microbial effects \citep{Kandlikar2019}. 
+\medskip
+
+
+% Limitations
+Attributing the observed changes in PSF to specific shifts in microbial community composition, however, remains a non-trivial task. 
+Common approaches usually involve searching for statistical relationships between differences in microbial composition and PSF strength and assigning probable functional guides to the metabarcoding data \citep{Nguyen2016}.
+However, precisely due to context dependency, the same microbial community may have different impacts on plant performance in different soil watering treatments.
+While challenging, future studies can use approaches such as metatranscriptomic to obtain further functional information, as well as single taxa or synthetic community bioassay to cement causal relationships.
+\medskip
+
+
+% Outlook for climate change
+In the near future, we expect to see not only changes in mean precipitation magnitude but also changes in its temporal variability.
+Moving forward requires knowledge on how the temporal aspects of PSF (e.g., the rate of soil conditioning and the rate at which plant responsiveness varies with ontogeny) interact with the frequency of wet--dry fluctuations and extreme events \citep{Rudgers2020, Ke2021}. 
+For example, a change in the timing of drought may perturb the microbial succession trajectory at various stages and lead to distinct microbial legacies. 
+Changes in the frequency of precipitation fluctuations may also influence how plants respond to soil microbes depending on the water availability during different plant ontogenetic stages.
+To this end, greenhouse experiments subjecting only the conditioning or response phase of PSF to varying environmental contexts can provide valuable mechanistic insight.
+Here, Dudenh{\"o}ffer and colleagues provided a solid baseline prediction upon which more complicated manipulations can be performed.
+Together with latest development in PSF theory \citep{Kandlikar2019}, we are advancing towards robust prediction of how soil microbes affect plant community diversity, stability, and productivity in a changing world.
+\bigskip
+
+
+
+\clearpage
+\begin{figure}[h]
+	\vspace{-1.5cm}
+	\centering
+	\includegraphics[width=0.75\linewidth]{../Figures/Figure1_ver6}
+	\caption{\, \textbf{Plant--soil feedback under different precipitation level}. 
+	\textbf{a}, Quantifying pairwise plant--soil feedback (PSF) with a transplant experiment. 
+	Soils with different history are prepared by allowing the yellow and green plant to condition their species-specific soil microbial community (i.e., the conditioning phase), indicated by yellow and green circles, respectively. 
+	Then, seedlings of the yellow and green plants are transplanted into soils conditioned by conspecifics and heterospecifics (i.e., the response phase), indicated by the match and mismatch between plant and microbe colors, respectively. 
+	In this illustrative figure, the x-axis represents soils with different conditioning history and the y-axis represents plant performance, which is also indicated by the size of the plant icon.
+	Negative pairwise PSF can occur when both plants condition their microbial community such that they perform worse in conspecific soils relative to the performance of the other species (left); positive pairwise PSF can occur when the opposite is true (right).
+	\textbf{b}, Predicted plant competitive outcome under different PSF scenarios. 
+	Negative pairwise PSF increases the tendency of plant coexistence (left), whereas positive pairwise PSF increases the tendency of priority effects (i.e., the competitive outcome depends on plant arrival order, which is indicated by the black arrow; right).
+	% Note that the pairwise PSF index \citep{Bever1997} represents a necessary but not sufficient criterion for plant coexistence, and a recent study \citep{Kandlikar2019} has derived an additional metric for a more robust prediction of plant coexistence.
+	Dudenh{\"o}ffer and colleagues \citep{Dudenhoffer2022} conducted a PSF experiment where they subjected both the conditioning and response phase to different watering treatments, indicated here with different shadings of brown. 
+	Their results suggest a shift from negative pairwise PSF under drier conditions (left \& light brown) to positive pairwise PSF under wetter conditions (right \& dark brown).}	
+	\label{fig:PSFconceptual} 
+\end{figure}
+
+
+
+\clearpage
+\bibliographystyle{sn-standardnature.bst}
+\bibliography{libraryfixed-abbrev}
+
+
+
+\begin{comment}
+\clearpage
+\begin{thebibliography}{19}
+\end{thebibliography}
+\end{comment}
+
+
+
+\section*{Competing interests}
+The author declare no competing financial interests.
+
+
+
+\end{document}
+
+
+
