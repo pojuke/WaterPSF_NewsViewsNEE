@@ -1,15 +1,7 @@
 # Fdb version 3
-["bibtex WaterPSF_NewsViewsNEE"] 1644569021 "WaterPSF_NewsViewsNEE.aux" "WaterPSF_NewsViewsNEE.bbl" "WaterPSF_NewsViewsNEE" 1644570594
-  "WaterPSF_NewsViewsNEE.aux" 1644570594 5649 ddc6471355e8462d0d19d9c963481887 ""
-  "WaterPSF_NewsViewsNEE.bcf" 0 -1 0 ""
-  "libraryfixed-abbrev.bib" 1644388646 243689 3f2d7535a9956e930798f95806d43b77 ""
-  "sn-standardnature.bst.bst" 0 -1 0 ""
-  (generated)
-  "WaterPSF_NewsViewsNEE.bbl"
-  "WaterPSF_NewsViewsNEE.blg"
-["pdflatex"] 1644570593 "WaterPSF_NewsViewsNEE.tex" "WaterPSF_NewsViewsNEE.pdf" "WaterPSF_NewsViewsNEE" 1644570594
+["pdflatex"] 1645548428 "WaterPSF_NewsViewsNEE.tex" "WaterPSF_NewsViewsNEE.pdf" "WaterPSF_NewsViewsNEE" 1645548429
   "../Figures/Figure1_ver6.pdf" 1644561964 288873 3a29d10a1373a33b862054d7d8dad1ce ""
-  "./WaterPSF_NewsViewsNEE.out" 1644570593 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "./WaterPSF_NewsViewsNEE.out" 1645548428 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc" 1422827479 2048 81f158c4a081e5d7c947598568390d20 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc" 1254269485 2458 3b98c7cf30777b7803f362f19b1b8e68 ""
@@ -224,10 +216,9 @@
   "/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1432479641 1764542 91654ba72bdb667e84ea24f076ae16d8 ""
   "/usr/local/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt" 1432479681 3849859 39a7d258195bde2394e244961601fbc5 ""
   "/usr/local/texlive/2015/texmf.cnf" 1432479636 577 0d611272082f3cdb8e80e09a3c69cf07 ""
-  "WaterPSF_NewsViewsNEE.aux" 1644570594 5649 ddc6471355e8462d0d19d9c963481887 ""
-  "WaterPSF_NewsViewsNEE.bbl" 1644569021 2648 5f351863c72ea3cee8244c26c3e99429 "bibtex WaterPSF_NewsViewsNEE"
-  "WaterPSF_NewsViewsNEE.out" 1644570593 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "WaterPSF_NewsViewsNEE.tex" 1644570592 13871 3aea615e172e4581641f128677d00772 ""
+  "WaterPSF_NewsViewsNEE.aux" 1645548428 5464 ce1ce1507b6bd93bda620c433c13a05b ""
+  "WaterPSF_NewsViewsNEE.out" 1645548428 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "WaterPSF_NewsViewsNEE.tex" 1645548427 15100 9ae3f8a8edb6ba317d33a2048bffd5bd ""
   (generated)
   "WaterPSF_NewsViewsNEE.out"
   "WaterPSF_NewsViewsNEE.log"
